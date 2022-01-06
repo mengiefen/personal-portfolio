@@ -2,6 +2,7 @@
 html {
   margin: 0;
   box-sizing: border-box;
+  font-family: Roboto, Helvetica, Arial, Verdana, Tahoma, sans-serif;
 }
 
 body {
@@ -14,6 +15,26 @@ body {
 .header-section {
   background-color: #3c3a39;
   width: 100vw;
+}
+
+.app-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 44px;
+}
+
+.time-display {
+  margin-left: 21px;
+  font-size: 14px;
+  font-weight: 500;
+  width: 56px;
+  color: #fff;
+  padding: 0 12px 0 12px;
+}
+
+.app-bar-images {
+  margin-right: 15px;
 }
 
 .navbar {
@@ -32,7 +53,6 @@ body {
 .logo h2 {
   color: #fff;
   font-size: 18px;
-  font-family: Roboto, Helvetica, Arial, Verdana, Tahoma, sans-serif;
   line-height: 24px;
 }
 
@@ -56,9 +76,9 @@ body {
 .profession-title {
   font-size: 24px;
   font-weight: 700;
-  font-family: Roboto, Helvetica, Arial, Verdana, Tahoma, sans-serif;
   color: #fff5e1;
   margin-bottom: 12px;
+  line-height: 32px;
 }
 
 .description {
