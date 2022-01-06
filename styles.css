@@ -106,3 +106,68 @@ body {
   height: 24px;
   cursor: pointer;
 }
+
+.work-section {
+  padding: 120px 0;
+  background: #e5e5e5;
+  display: flex;
+  flex-direction: column;
+}
+
+.work-heading {
+  font-size: 40px;
+  font-weight: 400;
+  color: #1c1a19;
+  line-height: 52px;
+  margin-bottom: 24px;
+  font-family: "Crete Round", Helvetica, Arial, Verdana, Tahoma, sans-serif;
+}
+
+.work-section hr {
+  border: 1px solid #212121;
+  margin-bottom: 80px;
+}
+
+.image-placeholder {
+  margin-bottom: 24px;
+}
+
+.sub-heading {
+  font-size: 32px;
+  font-family: "Crete Round", Helvetica, Arial, Verdana, Tahoma, sans-serif;
+  margin-bottom: 12px;
+}
+.recent-work,
+.work-list {
+  margin: 0 24px 0 24px;
+}
+
+.recent-work p {
+  font-family: Inter, Helvetica, Arial, Verdana, Tahoma, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 12px;
+}
+
+.work-list {
+  background: url("./assets/images/card-background-image.png");
+}
+
+.btn {
+  text-decoration: none;
+  border: 1px solid #8993a4;
+}
+
+.btn-transparent {
+  padding: 10px 12px;
+}
+
+.project-view-btn {
+}
+
+.btn-solid-short {
+  padding: 12px;
+  background: #ff6b00;
+  color: #fff;
+  font-size: 17px;
+}
