@@ -3,8 +3,8 @@
 
 # "Microverse Portfolio" project
 
-> In this project the thr front page of  "personal-portfolio" is made using flexbox. 
-> The project is done using the Figma reference design: Template-2
+> In this project the front page of  "personal-portfolio" is made using flexbox. 
+> The project is done refering the Figma design file: Template-2
 
 
 ## Built With
