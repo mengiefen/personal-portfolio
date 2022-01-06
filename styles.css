@@ -1,11 +1,12 @@
 *,
 html {
   margin: 0;
-  box-sizing: border-box;  
+  box-sizing: border-box;
 }
 
 body {
-  background:  #1c1a19 url("assets/images/illustration-header-mobile.png") no-repeat;
+  background: #1c1a19 url("assets/images/illustration-header-mobile.png");
+  background-repeat: no-repeat;
   background-position: top 312px right 0;
   font-family: Roboto, Helvetica, Arial, Verdana, Tahoma, sans-serif;
 }
