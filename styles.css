@@ -137,8 +137,8 @@ body {
   font-family: "Crete Round", Helvetica, Arial, Verdana, Tahoma, sans-serif;
   margin-bottom: 12px;
 }
-.recent-work,
-.work-list {
+
+.recent-work {
   margin: 0 24px 0 24px;
 }
 
@@ -149,20 +149,23 @@ body {
   margin-bottom: 12px;
 }
 
-.work-list {
-  background: url("./assets/images/card-background-image.png");
+.button-group-1 {
+  display: flex;
+  justify-content: start;
 }
 
 .btn {
   text-decoration: none;
   border: 1px solid #8993a4;
+  display: inline-block;
 }
 
 .btn-transparent {
   padding: 10px 12px;
-}
-
-.project-view-btn {
+  margin-bottom: 12px;
+  color: #091e42;
+  font-size: 15px;
+  line-height: 20px;
 }
 
 .btn-solid-short {
@@ -170,4 +173,68 @@ body {
   background: #ff6b00;
   color: #fff;
   font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.work-list {
+  margin: 24px;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(6, auto);
+}
+
+.work-item {
+  background: transparent url("./assets/images/card-background-image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-bottom: 24px;
+}
+
+.work-item h3 {
+  margin-top: 84px;
+  color: #fff;
+  padding: 0 16px 0 16px;
+}
+
+.work-item p {
+  padding: 0 16px 0 16px;
+  color: #fff;
+  font-family: Inter, Helvetica, Arial, Verdana, Tahoma, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 12px;
+}
+
+.button-group-2 {
+  margin-left: 16px;
+  display: flex;
+  justify-content: start;
+  margin-bottom: 12px;
+}
+
+.btn-gray {
+  background: rgba(255, 255, 255, 0.24);
+  color: #fff;
+  padding: 10px 12px;
+  margin-right: 12px;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.btn-solid-long {
+  width: 100%;
+  background: #ff6b00;
+  padding: 12px;
+  text-align: center;
+  font-family: Inter, Helvetica, Arial, Verdana, Tahoma, sans-serif;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #fff;
 }
