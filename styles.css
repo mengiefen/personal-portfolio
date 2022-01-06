@@ -1,0 +1,108 @@
+*,
+html {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #1c1a19 url("assets/images/illustration-header-mobile.png");
+  background-repeat: no-repeat;
+  background-position: top 312px right 0;
+  font-family: Roboto, Helvetica, Arial, Verdana, Tahoma, sans-serif;
+}
+
+.header-section {
+  background-color: #3c3a39;
+  width: 100vw;
+}
+
+.app-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 44px;
+}
+
+.time-display {
+  margin-left: 21px;
+  font-size: 14px;
+  font-weight: 500;
+  width: 56px;
+  color: #fff;
+  padding: 0 12px 0 12px;
+}
+
+.app-bar-images {
+  margin-right: 15px;
+}
+
+.navbar {
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  text-decoration: none;
+  margin-left: 24px;
+  cursor: pointer;
+}
+
+.logo h2 {
+  color: #fff;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.menu-icon {
+  margin-right: 32px;
+  width: 24px;
+  height: auto;
+}
+
+.front-page {
+  margin: 120px 24px 120px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.page-header {
+  font-size: 56px;
+  font-family: "Crete Round", Helvetica, Arial, Verdana, Tahoma, sans-serif;
+  line-height: 64px;
+  color: #ff6b00;
+}
+
+.profession-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff5e1;
+  margin-bottom: 12px;
+  line-height: 32px;
+}
+
+.description {
+  font-family: Poppins, Helvetica, Arial, Verdana, Tahoma, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  margin-bottom: 22px;
+}
+
+.social-contact {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.github-icon,
+.linkedin-icon,
+.angelist-icon,
+.twitter-icon,
+.m-icon {
+  margin-right: 20px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
