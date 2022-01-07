@@ -114,6 +114,12 @@ body {
   flex-direction: column;
 }
 
+.recent-work {
+  margin: 0 24px 0 24px;
+  display: flex;
+  flex-direction: column;
+}
+
 .work-heading {
   font-size: 40px;
   font-weight: 400;
@@ -121,25 +127,23 @@ body {
   line-height: 52px;
   margin-bottom: 24px;
   font-family: "Crete Round", Helvetica, Arial, Verdana, Tahoma, sans-serif;
+  align-self: center;
 }
 
-.work-section hr {
+.recent-work hr {
   border: 1px solid #212121;
   margin-bottom: 80px;
 }
 
 .image-placeholder {
   margin-bottom: 24px;
+  align-self: center;
 }
 
 .sub-heading {
   font-size: 32px;
   font-family: "Crete Round", Helvetica, Arial, Verdana, Tahoma, sans-serif;
   margin-bottom: 12px;
-}
-
-.recent-work {
-  margin: 0 24px 0 24px;
 }
 
 .recent-work p {
@@ -272,7 +276,7 @@ body {
 .about-section {
   background: transparent url("/assets/images/aboutme-background-image.png");
   background-repeat: no-repeat;
-  background-position: top 220px left 300px;
+  background-position: top 265px left 215px;
 }
 
 .aboutme-heading {

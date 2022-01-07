@@ -4,7 +4,7 @@
 
 # "Microverse Portfolio" project
 
-> In this project the front page of "personal-portfolio" is made using flexbox.
+> In this project the front page of "personal-portfolio" is made using flexbox and CSS Grid.
 > The project is done refering the Figma design file: Template-2
 
 ## Built With
