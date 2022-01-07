@@ -155,7 +155,13 @@ body {
 
 .button-group-1 {
   display: flex;
-  justify-content: start;
+  list-style: none;
+  margin-bottom: 12px;
+  padding-left: 0;
+}
+
+.button-group-1 li {
+  margin-right: 12px;
 }
 
 .btn {
@@ -166,8 +172,6 @@ body {
 
 .btn-transparent {
   padding: 10px 12px;
-  margin-bottom: 12px;
-  margin-right: 12px;
   color: #091e42;
   font-size: 15px;
   line-height: 20px;
@@ -224,17 +228,21 @@ body {
 }
 
 .button-group-2 {
-  margin-left: 16px;
   display: flex;
-  justify-content: start;
+  list-style: none;
   margin-bottom: 12px;
+  margin-left: 16px;
+  padding-left: 0;
+}
+
+.button-group-2 li {
+  margin-right: 12px;
 }
 
 .btn-gray {
   background: rgba(255, 255, 255, 0.24);
   color: #fff;
   padding: 10px 12px;
-  margin-right: 12px;
   font-size: 15px;
   line-height: 20px;
   font-weight: 500;
@@ -345,11 +353,12 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  list-style: none;
   margin: 44px 0;
   font-family: Inter, Helvetica, Arial, Verdana, Tahoma, sans-serif;
 }
 
-.list-items h4 {
+.list-items li {
   margin-bottom: 32px;
 }
 
