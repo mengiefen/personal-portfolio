@@ -18,9 +18,12 @@
 **Demonstrate the concept of github flows**
 
 **The the front page has two sections: the header-section and the heading section**
+
 **Flexbox is used to arrange elements in both section**
 
-**In the work section to showcase the projects completed are done for mobile website using Flexbox and CSS Grid**
+**The work section part of the projects completed. This has been done for mobile website using Flexbox and CSS Grid.**
+
+**The about-section is done using unorder list elements to showcase the major skills for the personal portfolio website.**
 
 ## Authors
 

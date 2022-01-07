@@ -163,9 +163,11 @@ body {
 .btn-transparent {
   padding: 10px 12px;
   margin-bottom: 12px;
+  margin-right: 12px;
   color: #091e42;
   font-size: 15px;
   line-height: 20px;
+  font-weight: 500;
 }
 
 .btn-solid-short {
@@ -176,6 +178,12 @@ body {
   line-height: 24px;
   font-weight: 700;
   margin-bottom: 12px;
+}
+
+.btn-solid-short:enabled,
+.btn-solid-short:hover {
+  background: #f55800;
+  color: #f4f1f0;
 }
 
 .work-list {
@@ -225,6 +233,19 @@ body {
   margin-right: 12px;
   font-size: 15px;
   line-height: 20px;
+  font-weight: 500;
+}
+
+.btn-transparent:hover,
+.btn-gray:hover {
+  color: #f55800;
+  border: 1px solid #f55800;
+}
+
+.btn-transparent:active,
+.btn-gray:active {
+  background: #e05304;
+  color: #f4f1f0;
 }
 
 .btn-solid-long {
@@ -237,4 +258,97 @@ body {
   line-height: 24px;
   font-weight: bold;
   color: #fff;
+}
+
+.btn-solid-long:enabled,
+.btn-solid-long:hover {
+  background: #f55800;
+}
+
+.btn-solid-long:active {
+  background: #e05304;
+}
+
+.about-section {
+  background: transparent url("/assets/images/aboutme-background-image.png");
+  background-repeat: no-repeat;
+  background-position: top 220px left 300px;
+}
+
+.aboutme-heading {
+  color: #ff6b00;
+  font-size: 72px;
+  line-height: 88px;
+  font-family: "Crete Round", Helvetica, Arial, Verdana, Tahoma, sans-serif;
+  letter-spacing: 0.37px;
+  font-weight: normal;
+  margin: 120px 24px 24px 24px;
+}
+
+.aboutme-desc {
+  font-size: 16px;
+  line-height: 24px;
+  color: #f4f5f7;
+  margin: 0 24px 24px 24px;
+  font-family: Inter, Helvetica, Arial, Verdana, Tahoma, sans-serif;
+}
+
+.about-section a {
+  margin-left: 24px;
+  margin-bottom: 209px;
+}
+
+.about-section hr {
+  border: 1px solid #fff;
+  margin-right: 24px;
+  margin-left: 24px;
+  margin-bottom: 137px;
+}
+
+.about-categories {
+  color: #fff;
+  margin-bottom: 131px;
+}
+
+.list-1,
+.list-2,
+.list-3 {
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Inter, Helvetica, Arial, Verdana, Tahoma, sans-serif;
+}
+
+.list-1 {
+  list-style-image: url("./assets/images/square-icon-45-1.png");
+}
+
+.list-2 {
+  list-style-image: url("./assets/images/square-icon.svg");
+}
+
+.list-3 {
+  list-style-image: url("./assets/images/circle-icon.svg");
+}
+
+.list-items {
+  font-size: 22px;
+  line-height: 43px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 44px 0;
+  font-family: Inter, Helvetica, Arial, Verdana, Tahoma, sans-serif;
+}
+
+.list-items h4 {
+  margin-bottom: 32px;
+}
+
+.list-items h4:last-child {
+  margin-bottom: 0;
 }
