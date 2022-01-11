@@ -434,3 +434,25 @@ body {
   align-self: center;
   background-color: #fbf8f7;
 }
+
+.footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.thin-line {
+  margin-bottom: 23px;
+  color: #dfe1e6;
+  width: 100%;
+}
+
+.footer-buttons {
+  align-self: center;
+}
+
+.thick-line {
+  height: 7.5px;
+  background-color: #0d151e;
+  margin: 0 120px 8px 120px;
+  border-radius: 10px;
+}
