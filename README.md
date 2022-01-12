@@ -4,6 +4,8 @@
 
 # "Microverse Portfolio" project
 
+![screenshot](./assets/images/front-page.png)
+
 > In this project the front page of "personal-portfolio" is made using flexbox and CSS Grid.
 > The project is done refering the Figma design file: Template-2
 
@@ -25,15 +27,20 @@
 
 **The about-section is done using unorder list elements to showcase the major skills for the personal portfolio website.**
 
+**The form-section consists of the form submission elements with form validation. In addition, the footer social-media navigation implemented.**
+
 ## Authors
 
 👤 **Author1**
 
 - GitHub: [@mengiefen](https://github.com/githubhandle)
 - Twitter: [@MengistuFentaw](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/mengefen/)
+- Linkedin: [LinkedIn](https://www.linkedin.com/in/mengefen/)
 
-👤
+👤**Author-2**
+-Github:[@Estebanmual](https://github.com/Estebanmual)
+-Twitter:
+-Linkedin:
 
 ## 🤝 Contributing
 
