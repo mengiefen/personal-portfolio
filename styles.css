@@ -223,9 +223,36 @@ body {
   margin-bottom: 80px;
 }
 
+@media screen and (min-width: 992px) {
+  .work-section {
+    padding: 135px 100px 130px 100px;
+  }
+
+  .wrapper-work-heading {
+    display: flex;
+    align-items: center;
+    margin-bottom: 114px;
+  }
+
+  .work-heading {
+    color: #091e42;
+    margin-bottom: 0;
+    margin-right: 24px;
+  }
+
+  .recent-work hr {
+    border: 1px solid #212121;
+    margin-bottom: 0;
+    width: 673px;
+    height: 1px;
+  }
+}
+
 .image-placeholder {
   margin-bottom: 24px;
   align-self: center;
+  width: 327px;
+  height: auto;
 }
 
 .sub-heading {
@@ -280,6 +307,40 @@ body {
 .btn-solid-short:hover {
   background: #f55800;
   color: #f4f1f0;
+}
+
+@media screen and (min-width: 992px) {
+  .wrapper-recent-work {
+    display: flex;
+    justify-content: center;
+  }
+
+  .image-placeholder {
+    margin-right: 24px;
+    width: 684px;
+    height: auto;
+  }
+
+  .sub-heading {
+    font-size: 40px;
+    color: #091e42;
+  }
+
+  .recent-work p {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 24px;
+    padding: 10px 12px;
+    color: #091e42;
+  }
+
+  .button-group-1 {
+    margin-bottom: 36px;
+  }
+
+  .button-group-1 li {
+    margin-right: 24px;
+  }
 }
 
 .work-list {
