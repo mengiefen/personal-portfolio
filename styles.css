@@ -415,7 +415,7 @@ body {
 
 .form-message {
   width: 100%;
-  background: #fbf8f7;
+  background-color: transparent;
   height: 114px;
   margin-bottom: 24px;
 }
