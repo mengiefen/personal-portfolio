@@ -113,6 +113,10 @@ body {
   margin-right: 24px;
 }
 
+.front-page-heading span {
+  display: block;
+}
+
 .profession-title {
   font-size: 24px;
   font-weight: 700;
@@ -137,7 +141,7 @@ body {
   padding: 0;
 }
 
-.social-contact li a {
+.social-contact li {
   cursor: pointer;
   text-decoration: none;
   margin-right: 20px;
@@ -225,7 +229,7 @@ body {
 
 @media screen and (min-width: 992px) {
   .work-section {
-    padding: 135px 100px 130px 100px;
+    padding: 135px 100px 93px 100px;
   }
 
   .wrapper-work-heading {
@@ -348,6 +352,15 @@ body {
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: repeat(6, auto);
+}
+
+@media screen and (min-width: 992px) {
+  .work-list {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-row-gap: 24px;
+    grid-column-gap: 37px;
+  }
 }
 
 .work-item {
@@ -597,6 +610,10 @@ body {
 
 .footer-buttons {
   align-self: center;
+}
+
+.footer-buttons a {
+  margin-right: 21px;
 }
 
 .thick-line {
