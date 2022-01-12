@@ -202,7 +202,7 @@ body {
 }
 
 .work-item {
-  background: transparent url("./assets/images/card-background-image.png");
+  background: transparent url("assets/images/card-background-image.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -282,7 +282,7 @@ body {
 }
 
 .about-section {
-  background: transparent url("/assets/images/aboutme-background-image.png");
+  background: transparent url("assets/images/aboutme-background-image.png");
   background-repeat: no-repeat;
   background-position: top 265px left 215px;
 }
@@ -335,15 +335,15 @@ body {
 }
 
 .list-1 {
-  list-style-image: url("./assets/images/square-icon-45-1.png");
+  list-style-image: url("assets/images/square-icon-45-1.png");
 }
 
 .list-2 {
-  list-style-image: url("./assets/images/square-icon.svg");
+  list-style-image: url("assets/images/square-icon.svg");
 }
 
 .list-3 {
-  list-style-image: url("./assets/images/circle-icon.svg");
+  list-style-image: url("assets/images/circle-icon.svg");
 }
 
 .list-items {
