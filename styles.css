@@ -7,33 +7,21 @@ html {
 body {
   background: #1c1a19 url("assets/images/illustration-header-mobile.png");
   background-repeat: no-repeat;
-  background-position: top 312px right 0;
+  background-position: top 264px right 0;
   font-family: Roboto, Helvetica, Arial, Verdana, Tahoma, sans-serif;
+}
+
+@media screen and (min-width: 992px) {
+  body {
+    background: #1c1a19 url("assets/images/bg-front-page-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: top right;
+  }
 }
 
 .header-section {
   background-color: #3c3a39;
   width: 100vw;
-}
-
-.app-bar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 44px;
-}
-
-.time-display {
-  margin-left: 21px;
-  font-size: 14px;
-  font-weight: 500;
-  width: 56px;
-  color: #fff;
-  padding: 0 12px 0 12px;
-}
-
-.app-bar-images {
-  margin-right: 15px;
 }
 
 .navbar {
@@ -55,24 +43,74 @@ body {
   line-height: 24px;
 }
 
+.desktop-nav {
+  display: none;
+}
+
 .menu-icon {
   margin-right: 32px;
   width: 24px;
   height: auto;
 }
 
+@media screen and (min-width: 992px) {
+  .navbar {
+    height: 72px;
+  }
+
+  .logo {
+    margin-left: 151px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .desktop-nav {
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
+
+  .desktop-nav li {
+    margin-right: 32px;
+  }
+
+  .desktop-nav li:last-child {
+    margin-right: 151px;
+  }
+
+  .desktop-nav li a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: #fff;
+  }
+}
+
 .front-page {
+  width: 100vw;
   margin: 120px 24px 120px 24px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
-.page-header {
+.header-intro {
+  margin-bottom: 22px;
+}
+
+.front-page-heading {
   font-size: 56px;
   font-family: "Crete Round", Helvetica, Arial, Verdana, Tahoma, sans-serif;
   line-height: 64px;
   color: #ff6b00;
+  margin-right: 24px;
 }
 
 .profession-title {
@@ -81,30 +119,80 @@ body {
   color: #fff5e1;
   margin-bottom: 12px;
   line-height: 32px;
+  margin-right: 24px;
 }
 
-.description {
+.profession-description {
   font-family: Poppins, Helvetica, Arial, Verdana, Tahoma, sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: #fff;
-  margin-bottom: 22px;
+  margin-right: 24px;
 }
 
 .social-contact {
   display: flex;
   justify-content: flex-start;
+  list-style: none;
+  padding: 0;
 }
 
-.github-icon,
-.linkedin-icon,
-.angelist-icon,
-.twitter-icon,
-.m-icon {
-  margin-right: 20px;
-  width: 24px;
-  height: 24px;
+.social-contact li a {
   cursor: pointer;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+@media screen and (min-width: 992px) {
+  .front-page {
+    margin-left: 36px;
+    margin-top: 192px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .header-intro {
+    max-width: 566px;
+    order: 2;
+  }
+
+  .front-page-heading {
+    font-size: 72px;
+    line-height: 81.5px;
+    color: #ff6b00;
+    margin-bottom: 24px;
+  }
+
+  .profession-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff5e1;
+    margin-bottom: 24px;
+    line-height: 44px;
+  }
+
+  .profession-description {
+    font-family: Inter, Helvetica, Arial, Verdana, Tahoma, sans-serif;
+    font-size: 20px;
+    line-height: 32px;
+    color: #f4f4f7;
+  }
+
+  .social-contact {
+    flex-direction: column;
+    align-items: center;
+    margin-right: 89px;
+    order: 1;
+  }
+
+  .social-contact li {
+    margin-bottom: 23px;
+  }
+
+  .social-contact li a {
+    margin-right: 0;
+  }
 }
 
 .work-section {
