@@ -428,24 +428,69 @@ body {
   }
 }
 
-.work-item {
+[class*="work-item-"] {
   background: transparent url("assets/images/card-background-image.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
   margin-bottom: 24px;
 }
 
-.work-item h3 {
+.work-item-2 .btn-solid-long,
+.work-item-3 .btn-solid-long,
+.work-item-4 .btn-solid-long,
+.work-item-5 .btn-solid-long,
+.work-item-6 .btn-solid-long {
+  display: none;
+}
+
+.work-item-1 {
+  background: transparent url("assets/images/bg-desktop-project-3.png");
+  justify-content: flex-end;
+}
+
+.work-item-1 .work-list-description {
+  display: none;
+}
+
+.work-item-2 {
+  background: transparent url("assets/images/bg-desktop-project-2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.work-item-3 {
+  background: transparent url("assets/images/bg-desktop-project-1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.work-item-5 {
+  background: transparent url("assets/images/bg-desktop-project-2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.work-item-6 {
+  background: transparent url("assets/images/bg-desktop-project-1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+[class*="work-item-"] h3 {
   margin-top: 84px;
   color: #fff;
   padding: 0 16px 0 16px;
 }
 
-.work-item p {
+[class*="work-item-"] p {
   padding: 0 16px 0 16px;
   color: #fff;
   font-family: Inter, Helvetica, Arial, Verdana, Tahoma, sans-serif;
