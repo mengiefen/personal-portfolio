@@ -439,14 +439,6 @@ body {
   margin-bottom: 24px;
 }
 
-.work-item-2 .btn-solid-long,
-.work-item-3 .btn-solid-long,
-.work-item-4 .btn-solid-long,
-.work-item-5 .btn-solid-long,
-.work-item-6 .btn-solid-long {
-  display: none;
-}
-
 .work-item-1 {
   background: transparent url("assets/images/bg-desktop-project-3.png");
   justify-content: flex-end;
@@ -551,6 +543,14 @@ body {
 
 .btn-solid-long:active {
   background: #e05304;
+}
+
+.work-item-2 .btn-solid-long,
+.work-item-3 .btn-solid-long,
+.work-item-4 .btn-solid-long,
+.work-item-5 .btn-solid-long,
+.work-item-6 .btn-solid-long {
+  display: none;
 }
 
 .about-section {
