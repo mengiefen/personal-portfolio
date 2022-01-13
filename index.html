@@ -47,7 +47,7 @@
     </header>
     <section class="front-page">
       <div class="header-intro">
-        <h1 class="front-page-heading">Hey There.<span>I'm Menge</span> </h1>
+        <h1 class="front-page-heading">Hey There.<span>I'm Menge</span></h1>
         <h2 class="profession-title">I'm a Software Developer</h2>
         <p class="profession-description">
           I can help you build a product , feature or website Look through some
@@ -211,96 +211,107 @@
       </div>
     </section>
     <section class="about-section">
-      <h1 class="aboutme-heading">About Me</h1>
-      <p class="aboutme-desc">
-        Hello I’m a software developer! I can help you build a product , feature
-        or website Look through some of my work and experience! If you like what
-        you see and have a project you need coded, don’t hestiate to contact me.
-      </p>
-      <a href="#" class="btn btn-solid-short">Get My Resume</a>
+      <div class="wrapper-about-heading">
+        <h1 class="aboutme-heading">About Me</h1>
+        <p class="aboutme-desc">
+          Hello I’m a software developer! I can help you build a product ,
+          feature or website Look through some of my work and experience! If you
+          like what you see and have a project you need coded, don’t hestiate to
+          contact me.
+        </p>
+        <a href="#" class="btn btn-solid-short">Get My Resume</a>
+      </div>
       <hr />
       <div class="about-categories">
-        <ul class="list-1">
-          <li>Languages</li>
-        </ul>
-        <ul class="list-items">
-          <li>JavaScript</li>
-          <li>Ruby</li>
-          <li>HTML</li>
-          <li>CSS</li>
-        </ul>
-        <ul class="list-2">
-          <li>Frameworks</li>
-        </ul>
-        <ul class="list-items">
-          <li>Bootstrap</li>
-          <li>Ruby on Rails</li>
-          <li>RSPec</li>
-          <li>CapyBara</li>
-          <li>Selenium</li>
-        </ul>
-        <ul class="list-3">
-          <li>Skills</li>
-        </ul>
-        <ul class="list-items">
-          <li>Codekit</li>
-          <li>Github</li>
-          <li>Codepen</li>
-          <li>Gitlab</li>
-          <li>Terminal</li>
-        </ul>
+        <div class="category-1">
+          <ul class="list-1">
+            <li>Languages</li>
+          </ul>
+          <ul class="list-items">
+            <li>JavaScript</li>
+            <li>Ruby</li>
+            <li>HTML</li>
+            <li>CSS</li>
+          </ul>
+        </div>
+        <div class="category-2">
+          <ul class="list-2">
+            <li>Frameworks</li>
+          </ul>
+          <ul class="list-items">
+            <li>Bootstrap</li>
+            <li>Ruby on Rails</li>
+            <li>RSPec</li>
+            <li>CapyBara</li>
+            <li>Selenium</li>
+          </ul>
+        </div>
+        <div class="category-3">
+          <ul class="list-3">
+            <li>Skills</li>
+          </ul>
+          <ul class="list-items">
+            <li>Codekit</li>
+            <li>Github</li>
+            <li>Codepen</li>
+            <li>Gitlab</li>
+            <li>Terminal</li>
+          </ul>
+        </div>
       </div>
     </section>
     <section class="form-section">
-      <h3 class="form-description">
-        I'm always interested in hearing about new projects, so if you'd like to
-        chat please get in touch.
-      </h3>
-      <form
-        class="portfolio-form"
-        action="https://formspree.io/f/mdobanyg"
-        method="post"
-      >
-        <ul>
-          <li>
-            <input
-              class="form-input"
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Full name"
-              maxlength="30"
-              required
-            />
-          </li>
-          <li>
-            <input
-              class="form-input"
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Email address"
-              required
-            />
-          </li>
-          <li>
-            <textarea
-              class="form-message"
-              id="message"
-              name="message"
-              placeholder="Enter text here"
-              maxlength="500"
-              required
-            ></textarea>
-          </li>
-        </ul>
-        <input
-          class="btn btn-solid-short form-btn"
-          type="submit"
-          value="Get in touch"
-          name="submit"
-        />
-      </form>
+      <div class="wrapper-form">
+        <h3 class="form-description">
+          I'm always interested in hearing about new projects, so if you'd like
+          to chat please get in touch.
+        </h3>
+        <form
+          class="portfolio-form"
+          action="https://formspree.io/f/mdobanyg"
+          method="post"
+        >
+          <ul>
+            <li>
+              <input
+                class="form-input"
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Full name"
+                maxlength="30"
+                required
+              />
+            </li>
+            <li>
+              <input
+                class="form-input"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email address"
+                required
+              />
+            </li>
+            <li>
+              <textarea
+                class="form-message"
+                id="message"
+                name="message"
+                placeholder="Enter text here"
+                maxlength="500"
+                required
+              ></textarea>
+            </li>
+          </ul>
+          <input
+            class="btn btn-solid-short form-btn"
+            type="submit"
+            value="Get in touch"
+            name="submit"
+          />
+        </form>
+      </div>
 
       <footer class="footer">
         <hr class="thin-line" />
