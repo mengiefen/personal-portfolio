@@ -79,6 +79,7 @@ body {
 
   .desktop-nav li {
     margin-right: 32px;
+    transition: all 0.5s;
   }
 
   .desktop-nav li:last-child {
@@ -91,6 +92,15 @@ body {
     font-size: 15px;
     line-height: 20px;
     color: #fff;
+    transition: all 0.5s;
+  }
+
+  .desktop-nav li:hover {
+    transform: translateY(-2px);
+  }
+
+  .desktop-nav li a:hover {
+    color: #e05304;
   }
 }
 
@@ -197,6 +207,14 @@ body {
 
   .social-contact li a {
     margin-right: 0;
+  }
+
+  .social-contact li a img {
+    transition: all 0.75s ease-in-out;
+  }
+
+  .social-contact li a img:hover {
+    transform: scale(1.5);
   }
 }
 
@@ -386,6 +404,14 @@ body {
   .button-group-1 li {
     margin-right: 16px;
   }
+
+  .btn-solid-short {
+    transition: all 0.5s;
+  }
+
+  .btn-solid-short:hover {
+    transform: translateY(-2px) scale(1.1);
+  }
 }
 
 @media screen and (min-width: 1201px) {
@@ -429,7 +455,7 @@ body {
 }
 
 [class*="work-item-"] {
-  background: transparent url("assets/images/card-background-image.png");
+  background: transparent url("assets/images/card-background-image.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -437,10 +463,11 @@ body {
   flex-direction: column;
   align-items: flex-start;
   margin-bottom: 24px;
+  transition: 0.5s ease-in-out;
 }
 
 .work-item-1 {
-  background: transparent url("assets/images/bg-desktop-project-3.png");
+  background: transparent url("assets/images/bg-desktop-project-1.svg");
   justify-content: flex-end;
 }
 
@@ -449,28 +476,28 @@ body {
 }
 
 .work-item-2 {
-  background: transparent url("assets/images/bg-desktop-project-2.png");
+  background: transparent url("assets/images/bg-desktop-project-2.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .work-item-3 {
-  background: transparent url("assets/images/bg-desktop-project-1.png");
+  background: transparent url("assets/images/bg-desktop-project-3.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .work-item-5 {
-  background: transparent url("assets/images/bg-desktop-project-2.png");
+  background: transparent url("assets/images/bg-desktop-project-2.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .work-item-6 {
-  background: transparent url("assets/images/bg-desktop-project-1.png");
+  background: transparent url("assets/images/bg-desktop-project-3.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -573,6 +600,16 @@ body {
   .wrapper-about-heading {
     width: 480px;
     margin: 90px auto 0 110px;
+  }
+
+  [class*="work-item-"] {
+    transition: 0.5s ease-in-out;
+    opacity: 0.9;
+  }
+
+  [class*="work-item-"]:hover {
+    transform: scale(1.1) scale(1);
+    opacity: 1;
   }
 }
 
@@ -856,5 +893,13 @@ body {
 
   .thick-line {
     display: none;
+  }
+
+  .footer-buttons a {
+    transition: 0.5s ease-in-out;
+  }
+
+  .footer-buttons a:hover {
+    transform: scale(1.2);
   }
 }
