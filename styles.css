@@ -209,9 +209,12 @@ body {
     margin-right: 0;
   }
 
+  .social-contact li a img {
+    transition: all 0.75s ease-in-out;
+  }
+
   .social-contact li a img:hover {
-    transform: scale(1.2);
-    border-radius: 50%;
+    transform: scale(1.5);
   }
 }
 
@@ -452,7 +455,7 @@ body {
 }
 
 [class*="work-item-"] {
-  background: transparent url("assets/images/card-background-image.png");
+  background: transparent url("assets/images/card-background-image.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -464,7 +467,7 @@ body {
 }
 
 .work-item-1 {
-  background: transparent url("assets/images/bg-desktop-project-3.png");
+  background: transparent url("assets/images/bg-desktop-project-1.svg");
   justify-content: flex-end;
 }
 
@@ -473,28 +476,28 @@ body {
 }
 
 .work-item-2 {
-  background: transparent url("assets/images/bg-desktop-project-2.png");
+  background: transparent url("assets/images/bg-desktop-project-2.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .work-item-3 {
-  background: transparent url("assets/images/bg-desktop-project-1.png");
+  background: transparent url("assets/images/bg-desktop-project-3.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .work-item-5 {
-  background: transparent url("assets/images/bg-desktop-project-2.png");
+  background: transparent url("assets/images/bg-desktop-project-2.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .work-item-6 {
-  background: transparent url("assets/images/bg-desktop-project-1.png");
+  background: transparent url("assets/images/bg-desktop-project-3.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -892,7 +895,7 @@ body {
     display: none;
   }
 
-  .footer-buttons a{
+  .footer-buttons a {
     transition: 0.5s ease-in-out;
   }
 
