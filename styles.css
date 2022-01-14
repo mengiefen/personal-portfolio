@@ -213,6 +213,8 @@ body {
     transform: scale(1.2);
     border-radius: 50%;
   }
+
+
 }
 
 @media screen and (min-width: 1201px) {
@@ -400,6 +402,13 @@ body {
 
   .button-group-1 li {
     margin-right: 16px;
+  }
+
+  .btn-solid-short{
+    transition: all 0.5s;
+  }
+  .btn-solid-short:hover {
+    transform: translateY(-2px) scale(1.1);
   }
 }
 
