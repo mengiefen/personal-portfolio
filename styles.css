@@ -79,6 +79,7 @@ body {
 
   .desktop-nav li {
     margin-right: 32px;
+    transition: all 0.5s;
   }
 
   .desktop-nav li:last-child {
@@ -91,6 +92,15 @@ body {
     font-size: 15px;
     line-height: 20px;
     color: #fff;
+    transition: all 0.5s;
+  }
+
+  .desktop-nav li:hover {
+    transform: translateY(-2px);
+  }
+
+  .desktop-nav li a:hover {
+    color: #e05304;
   }
 }
 
@@ -197,6 +207,11 @@ body {
 
   .social-contact li a {
     margin-right: 0;
+  }
+
+  .social-contact li a img:hover {
+    transform: scale(1.2);
+    border-radius: 50%;
   }
 }
 
