@@ -2,23 +2,12 @@
 
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# "Microverse Portfolio" Project
+# "Microverse Portfolio" project
 
-> In this project, the portfolio responsive website has been done using purely HTML and CSS technologies as part of the requirement of Microverse learning. The work is done based on the available reference Figma design file.
+![screenshot](./assets/images/front-page.png)
 
-## Mobile Version
-
-![screenshot](./assets/images/mobile-front-page.png)
-
-> All units are from Figma design file: Template-2
-> In order to layout components flexbox and CSS Grid are used.
-
-## Desktop Version
-
-![screenshot](./assets/images/desktop-front-page.png)
-
-> All units and styles are from Figma design file: Template-2
-> To layout components flexbox and CSS Grid are used.
+> In this project the front page of "personal-portfolio" is made using flexbox and CSS Grid.
+> The project is done refering the Figma design file: Template-2
 
 ## Built With
 
@@ -40,8 +29,6 @@
 
 **The form-section consists of the form submission elements with form validation. In addition, the footer social-media navigation implemented.**
 
-**The css media querries used to include responsive web design features fro various screen sizes**
-
 ## Authors
 
 👤 **Author1**
@@ -50,21 +37,20 @@
 - Twitter: [@MengistuFentaw](https://twitter.com/twitterhandle)
 - Linkedin: [LinkedIn](https://www.linkedin.com/in/mengefen/)
 
-## 🤝 Contributing
-
+👤**Author-2**
 -Github:[@Estebanmual](https://github.com/Estebanmual)
 -Twitter:
 -Linkedin:
 
+## 🤝 Contributing
+
 ## Show your support
+
+Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- To my coding partners: Nytare Guy, Ivan Barbosa da Silva,Esyeban Mual.
-
-## Live Demo
-
-- https://mengiefen.github.io/personal-portfolio/
+- To my coding partners: Nytare Guy, Ivan Barbosa da Silva
 
 ## 📝 License
 
