@@ -38,7 +38,7 @@
   <header class="header-section">
     <!-- Desktop Navigation -->
     <nav class="navbar">
-      <a class="logo" href="#">
+      <a class="logo" href="#" id="logo">
         <h2>Men Fen</h2>
       </a>
       <div class="nav">
@@ -58,13 +58,13 @@
           </li>
         </ul>
       </div>
-      <a href="#"><img class="menu-icon" src="assets/images/icon-menu.svg"
+      <a href="#" id="menu-icon" onclick=toggleMenuOpen()><img class="menu-icon" src="assets/images/icon-menu.svg"
           alt="Menu logo" /></a>
     </nav>
 
     <!-- Mobile Navigation -->
     <nav id="mobile-nav" class="mobile-nav">
-      <a class="cancel-btn" href="#"><img class="cancel-icon" src="assets/images/icon-cancel.svg"
+      <a class="cancel-btn" href="#" id="cancel-icon" onclick=toggleMenuClose()><img class="cancel-icon" src="assets/images/icon-cancel.svg"
           alt="Menu cancel" /></a>
       <ul class="mobile-menu">
         <li class="mobile-nav-item"><a href="#work-section">Portfolio</a></li>

@@ -11,6 +11,10 @@ body {
   font-family: Roboto, Helvetica, Arial, Verdana, Tahoma, sans-serif;
 }
 
+.scrollDisable {
+  position: fixed;
+}
+
 @media screen and (min-width: 992px) {
   body {
     background: #1c1a19 url("assets/images/bg-front-page-desktop.svg");
@@ -45,6 +49,10 @@ body {
   position: absolute;
   top: 12px;
   right: 32px;
+}
+
+.mobile-nav {
+  display: none;
 }
 
 .navbar {
