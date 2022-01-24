@@ -58,7 +58,7 @@ body {
 
 @media screen and (min-width: 992px) {
   .navbar {
-    height: 72px;
+    height: 64px;
   }
 
   .logo {
@@ -121,25 +121,12 @@ body {
   margin-right: 24px;
 }
 
-@keyframes heading-animation {
-  from {
-    margin-top: 100%;
-    overflow: hidden;
-  }
-
-  to {
-    margin-top: 0%;
-  }
-}
-
 .front-page-heading {
   font-size: 56px;
   font-family: "Crete Round", Helvetica, Arial, Verdana, Tahoma, sans-serif;
   line-height: 64px;
   color: #ff6b00;
   margin-bottom: 12px;
-  animation-duration: 3s;
-  animation-name: heading-animation;
 }
 
 .front-page-heading span {
@@ -189,11 +176,24 @@ body {
     order: 2;
   }
 
+  @keyframes heading-animation {
+    from {
+      margin-top: 100%;
+      overflow: hidden;
+    }
+
+    to {
+      margin-top: 0%;
+    }
+  }
+
   .front-page-heading {
     font-size: 64px;
-    line-height: 72px;
+    line-height: 72px;  
     color: #ff6b00;
     margin-bottom: 18px;
+    animation-duration: 3s;
+    animation-name: heading-animation;
   }
 
   .profession-title {
