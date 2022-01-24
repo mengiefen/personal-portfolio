@@ -11,7 +11,7 @@ body {
   font-family: Roboto, Helvetica, Arial, Verdana, Tahoma, sans-serif;
 }
 
-.scrollDisable {
+.scroll-disable {
   position: fixed;
 }
 
@@ -25,10 +25,12 @@ body {
 }
 
 /* Navigation and Logo */
-
 .header-section {
   background-color: #3c3a39;
   width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 .mobile-menu {
@@ -48,7 +50,7 @@ body {
   height: auto;
   position: absolute;
   top: 12px;
-  right: 32px;
+  right: 15%;
 }
 
 .mobile-nav {
