@@ -16,3 +16,6 @@ function toggleMenuClose() {
   logo.style.display = 'block';
   bodyTag[0].classList.toggle('scroll-disable');
 }
+
+mobileNav.addEventListener('click', toggleMenuOpen, true);
+menuIcon.addEventListener('click', toggleMenuClose, true);
