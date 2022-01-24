@@ -86,10 +86,15 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-right: 70px;
   }
 
   .mobile-nav {
     display: none;   
+  }
+
+  #menu-icon {
+    display: none;
   }
 }
 
