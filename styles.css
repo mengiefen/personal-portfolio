@@ -20,6 +20,8 @@ body {
   }
 }
 
+/* Navigation and Logo */
+
 .header-section {
   background-color: #3c3a39;
   width: 100vw;
@@ -103,6 +105,8 @@ body {
     color: #e05304;
   }
 }
+
+/* Front page styles */
 
 .front-page {
   width: 100vw;
@@ -247,6 +251,8 @@ body {
   }
 }
 
+/* Work or Project section */
+
 .work-section {
   padding: 120px 0;
   background: #e5e5e5;
@@ -330,6 +336,8 @@ body {
   line-height: 24px;
   margin-bottom: 12px;
 }
+
+/* Buttons */
 
 .button-group-1 {
   display: flex;
@@ -580,6 +588,8 @@ body {
   display: none;
 }
 
+/* About Section */
+
 .about-section {
   background: transparent url("assets/images/aboutme-background-image.png");
   background-repeat: no-repeat;
@@ -731,6 +741,8 @@ body {
   margin-bottom: 0;
 }
 
+/* form section */
+
 .form-section {
   background-color: #e5e5e5;
   display: flex;
@@ -859,6 +871,8 @@ body {
     line-height: 52px;
   }
 }
+
+/* Footer */
 
 .footer {
   display: flex;
