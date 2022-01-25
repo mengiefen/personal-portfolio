@@ -11,6 +11,10 @@ body {
   font-family: Roboto, Helvetica, Arial, Verdana, Tahoma, sans-serif;
 }
 
+.scroll-disable {
+  position: fixed;
+}
+
 @media screen and (min-width: 992px) {
   body {
     background: #1c1a19 url("assets/images/bg-front-page-desktop.svg");
@@ -21,10 +25,37 @@ body {
 }
 
 /* Navigation and Logo */
-
 .header-section {
   background-color: #3c3a39;
   width: 100vw;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+}
+
+.mobile-menu {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  list-style: none;
+  padding: 0 24px;
+}
+
+.mobile-nav .cancel-btn {
+  /* display:none; */
+  width: 24px;
+  height: auto;
+  position: absolute;
+  top: 24px;
+  right: 10%;
+}
+
+.mobile-nav {
+  display: none;
 }
 
 .navbar {
@@ -32,6 +63,38 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.mobile-menu .mobile-nav-item {
+  font-size: 32px;
+  font-weight: 700;
+  font-family: Inter, serif;
+  border-bottom: 1px solid #6f6c6b;
+  width: 100%;
+  padding: 24px 0 15px 16px;
+}
+
+.mobile-nav-item a {
+  text-decoration: none;
+  color: #fff5e1;
+}
+
+@media screen and (min-width: 992px) {
+  .navbar {
+    height: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 70px;
+  }
+
+  .mobile-nav {
+    display: none;
+  }
+
+  #menu-icon {
+    display: none;
+  }
 }
 
 .logo {
@@ -85,7 +148,7 @@ body {
   }
 
   .desktop-nav li:last-child {
-    margin-right: 151px;
+    margin-right: 0;
   }
 
   .desktop-nav li a {
@@ -107,10 +170,9 @@ body {
 }
 
 /* Front page styles */
-
 .front-page {
   width: 100vw;
-  margin: 120px 24px 120px 24px;
+  margin: 120px 24px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -189,7 +251,7 @@ body {
 
   .front-page-heading {
     font-size: 64px;
-    line-height: 72px;  
+    line-height: 72px;
     color: #ff6b00;
     margin-bottom: 18px;
     animation-duration: 3s;
@@ -274,7 +336,7 @@ body {
 }
 
 .recent-work {
-  margin: 0 24px 0 24px;
+  margin: 0 24px;
   display: flex;
   flex-direction: column;
 }
@@ -296,7 +358,7 @@ body {
 
 @media screen and (min-width: 992px) {
   .work-section {
-    padding: 135px 60px 93px 60px;
+    padding: 135px 60px 93px;
   }
 
   .wrapper-work-heading {
@@ -322,7 +384,7 @@ body {
 
 @media screen and (min-width: 1201px) {
   .work-section {
-    padding: 135px 100px 93px 100px;
+    padding: 135px 100px 93px;
   }
 
   .work-heading {
@@ -470,8 +532,7 @@ body {
   .work-list {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
-    grid-row-gap: 24px;
-    grid-column-gap: 37px;
+    grid-gap: 24px 37px;
   }
 }
 
@@ -527,11 +588,11 @@ body {
 [class*="work-item-"] h3 {
   margin-top: 84px;
   color: #fff;
-  padding: 0 16px 0 16px;
+  padding: 0 16px;
 }
 
 [class*="work-item-"] p {
-  padding: 0 16px 0 16px;
+  padding: 0 16px;
   color: #fff;
   font-family: Inter, Helvetica, Arial, Verdana, Tahoma, sans-serif;
   font-size: 16px;
@@ -552,7 +613,7 @@ body {
 }
 
 .btn-gray {
-  background: rgba(255, 255, 255, 0.24);
+  background: rgb(255 255 255 / 24%);
   color: #fff;
   padding: 10px 12px;
   font-size: 15px;
@@ -650,14 +711,14 @@ body {
   font-family: "Crete Round", Helvetica, Arial, Verdana, Tahoma, sans-serif;
   letter-spacing: 0.37px;
   font-weight: normal;
-  margin: 120px 24px 24px 24px;
+  margin: 120px 24px 24px;
 }
 
 .aboutme-desc {
   font-size: 16px;
   line-height: 24px;
   color: #f4f5f7;
-  margin: 0 24px 24px 24px;
+  margin: 0 24px 24px;
   font-family: Inter, Helvetica, Arial, Verdana, Tahoma, sans-serif;
 }
 
@@ -763,7 +824,7 @@ body {
 }
 
 .form-description {
-  margin: 120px 24px 73px 24px;
+  margin: 120px 24px 73px;
   font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -774,7 +835,7 @@ body {
 }
 
 .portfolio-form {
-  margin: 0 24px 124px 24px;
+  margin: 0 24px 124px;
   display: flex;
   flex-direction: column;
 }
@@ -848,7 +909,7 @@ body {
   }
 
   .form-input {
-    padding: 16px 16px 16px 16px;
+    padding: 16px;
     margin-bottom: 24px;
   }
 
@@ -909,7 +970,7 @@ body {
 .thick-line {
   height: 7.5px;
   background-color: #0d151e;
-  margin: 0 120px 8px 120px;
+  margin: 0 120px 8px;
   border-radius: 10px;
 }
 
