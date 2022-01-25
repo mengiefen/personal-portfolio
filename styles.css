@@ -29,6 +29,7 @@ body {
   background-color: #3c3a39;
   width: 100vw;
   position: fixed;
+  z-index: 999;
   top: 0;
   left: 0;
 }

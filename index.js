@@ -1,7 +1,9 @@
+const menuIcon = document.querySelector('.menu-icon');
+const cancelIcon = document.querySelector('.cancel-btn');
 const mobileNav = document.getElementById('mobile-nav');
-const menuIcon = document.getElementById('menu-icon');
 const logo = document.getElementById('logo');
 const bodyTag = document.getElementsByTagName('body');
+const options = document.querySelectorAll('.mobile-nav-item');
 
 function toggleMenuOpen() {
   mobileNav.style.display = 'block';
@@ -17,5 +19,9 @@ function toggleMenuClose() {
   bodyTag[0].classList.toggle('scroll-disable');
 }
 
-mobileNav.addEventListener('click', toggleMenuOpen, true);
-menuIcon.addEventListener('click', toggleMenuClose, true);
+options.forEach((listItem) => {
+  listItem.addEventListener('click', toggleMenuClose);
+});
+
+menuIcon.addEventListener('click', toggleMenuOpen);
+cancelIcon.addEventListener('click', toggleMenuClose);
