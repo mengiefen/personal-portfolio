@@ -56,10 +56,12 @@ buttonGroup.classList.add('modal-buttons-nav');
 //some changes required
 const sourceButton = document.createElement('a');
 sourceButton.classList.add('button');
+sourceButton.href = data.liveLink;
 const githubButton = document.createElement('a');
+githubButton.href = data.linkSource;
 sourceButton.classList.add('button');
-sourceButton.innerHTML = 'See Live < i class = "fas fa-external-link-alt" > < /i>';
-githubButton.innerHTML = 'See Source < i class = "fab fa-github" > < /i></a >'
+sourceButton.innerHTML = 'See Live <i class="fas fa-external-link-alt"></i>';
+githubButton.innerHTML = 'See Source <i class="fab fa-github"></i></a>';
 
 buttonGroup.appendChild(sourceButton);
 buttonGroup.appendChild(githubButton);
