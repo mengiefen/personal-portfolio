@@ -973,6 +973,7 @@ body {
   background-color: #e5e5e5;
   display: flex;
   flex-direction: column;
+  margin: 0 24px 160px 24px;
 }
 
 .form-description {
@@ -1007,6 +1008,10 @@ body {
   background-color: #e5e5e5;
 }
 
+#email {
+  margin-bottom: 10px;
+}
+
 .form-input::placeholder {
   font-family: Inter, sans-serif;
   font-style: normal;
@@ -1038,15 +1043,32 @@ body {
   background-color: #fbf8f7;
 }
 
-.error-message {
+/* Form Validation */
+.submit-error-message {
+  display: none;
+}
+
+.submit-error-message:invalid {
   color: red;
   font-family: Inter, sans-serif;
-  font-weight: normal;
+  font-weight: 700;
   font-size: 15px;
   line-height: 24px;
   margin-bottom: 36px;
-  padding: 12px;
-  align-self: center;
+  padding: 12px 0;
+}
+
+.email-error-message {
+  display: none;
+}
+
+.email-error-message:invalid {
+  margin-bottom: 24px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 24px;
+  padding: 12px 0;
+  color: red;
 }
 
 @media screen and (min-width: 992px) {

@@ -184,3 +184,28 @@ workFive.onclick = () => {
 workSix.onclick = () => {
   constructModal('work_6', 'block');
 };
+
+const form = document.getElementById('portfolio-form');
+const error = document.getElementById('submit-error');
+const email = document.getElementById('email');
+
+const regRex = /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+(?:\.[a-z0-9-]+)*$/;
+
+function showError() {
+  error.textContent = 'The email field is not in valid form';
+  error.classList.toggle('submit-error-message');
+}
+
+function submitForm() {
+  form.submit();
+}
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  console.log(regRex.test(email.value.trim()));
+  if (!regRex.test(email.value.trim())) {
+    showError();
+  } else {
+    submitForm();
+  }
+});

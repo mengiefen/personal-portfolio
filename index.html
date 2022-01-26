@@ -324,7 +324,7 @@
         I'm always interested in hearing about new projects, so if you'd like
         to chat please get in touch.
       </h3>
-      <form class="portfolio-form" action="https://formspree.io/f/mdobanyg"
+      <form class="portfolio-form" id ="portfolio-form" action="https://formspree.io/f/mdobanyg"
         method="post">
         <ul>
           <li>
@@ -333,16 +333,17 @@
           </li>
           <li>
             <input class="form-input" type="email" id="email" name="email"
-              placeholder="Email address" required />              
+              placeholder="Email address" required />   
+              <!-- <span class="email-error-message" id="email-error" >sfdfdfdfdf</span>            -->
           </li>
           <li>
             <textarea class="form-message" id="message" name="message"
               placeholder="Enter text here" maxlength="500" required></textarea>
           </li>
         </ul>
-        <span class="error-message" id="error"></span>
+        <span id="submit-error"></span>
         <input class="btn btn-solid-short form-btn" type="submit"
-          value="Get in touch" name="submit" />
+          value="Get in touch" name="submitmessage" />
       </form>
     </div>
 
