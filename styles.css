@@ -1044,11 +1044,8 @@ body {
 }
 
 /* Form Validation */
-.submit-error-message {
-  display: none;
-}
 
-.submit-error-message:invalid {
+.submit-error-message {
   color: red;
   font-family: Inter, sans-serif;
   font-weight: 700;
