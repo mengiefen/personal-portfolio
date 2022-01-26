@@ -429,6 +429,7 @@ body {
   text-decoration: none;
   border: 1px solid #8993a4;
   display: inline-block;
+  cursor: pointer;
 }
 
 .btn-transparent {
@@ -669,17 +670,23 @@ body {
 }
 
 .modal {
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   width: 91.47%;
   position: fixed;
   top: 33px;
+  overflow-y: scroll;
   margin: 0 16px;
-  height: calc(100vh-72px);
+  height: calc(100vh - 72px);
   background-color: #fff;
   z-index: 9999;
+}
 
+.cancel-modal {
+  position: absolute;
+  top: 15px;
+  right: 24px;
 }
 
 .modal-content {
@@ -688,7 +695,7 @@ body {
 
 .modal-title {
   font-size: 32px;
-  font-family: 700;
+  font-weight: 700;
   line-height: 44px;
   font-family: Roboto, serif;
   margin: 16px 0 16px 16px;
@@ -697,6 +704,7 @@ body {
 
 .modal-image {
   margin: 24px auto;
+  width: 100%;
 }
 
 .modal-desc {
@@ -704,13 +712,14 @@ body {
   line-height: 24px;
   font-weight: 400;
   color: #344563;
-  margin-bottom: 16px;
+  padding-bottom: 16px;
 }
 
 .modal-buttons {
   display: flex;
   list-style: none;
   margin-bottom: 12px;
+  padding-left: 0;
 }
 
 .btn-gray-modal {
