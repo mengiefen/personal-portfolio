@@ -6,10 +6,10 @@ const bodyTag = document.getElementsByTagName('body')[0];
 const options = document.querySelectorAll('.mobile-nav-item');
 
 const data = {
-  recentWork: {
+  featured_work: {
     title: 'Multi Post Stories',
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    imageUrl: 'assets/images/modal-image-1.svg',
+    imageUrl: 'assets/images/modal-image-1-desktop.svg',
     technolgies: ['CSS', 'Bootstrap', 'Ruby on Rails'],
     liveLink: 'https://mengiefen.github.io/personal-portfolio/#',
     linkSource: 'https://github.com/mengiefen/personal-portfolio',
@@ -88,40 +88,38 @@ options.forEach((listItem) => {
 
 menuIcon.addEventListener('click', toggleMenuOpen);
 cancelIcon.addEventListener('click', toggleMenuClose);
+const title = document.createElement('h1');
+
+const techLists = document.createElement('ul');
+const cancelButton = document.createElement('a');
+const popupModal = document.createElement('div');
+const modal = document.createElement('section');
+
+title.classList.add('modal-title');
+techLists.classList.add('modal-buttons');
+cancelButton.classList.add('cancel-modal');
+popupModal.classList.add('modal-content');
+modal.classList.add('modal');
+
+cancelButton.innerHTML = '<img class="cancel-icon" src="assets/images/icon-cancel.svg" alt="Menu cancel"/></a>';
 
 const constructModal = (modalItem) => {
   if (modalItem in data) {
     const modalName = data[modalItem];
-    const title = document.createElement('h1');
-    const desc = document.createElement('p');
-    const image = document.createElement('img');
-    const techLists = document.createElement('ul');
-    const cancelButton = document.createElement('a');
-    const buttonGroup = document.createElement('div');
-    const sourceButton = document.createElement('a');
-    const githubButton = document.createElement('a');
-    title.classList.add('modal-title');
     title.textContent = modalName.title;
-    image.classList.add('modal-image');
-    image.src = modalName.imageUrl;
-    desc.classList.add('modal-desc');
-    desc.textContent = modalName.description;
-    techLists.classList.add('modal-buttons');
-    cancelButton.classList.add('cancel-modal');
-    cancelButton.innerHTML = '<img class="cancel-icon" src="assets/images/icon-cancel.svg" alt="Menu cancel"/></a>';
-    buttonGroup.classList.add('modal-buttons-nav');
-
-    sourceButton.classList.add('button', 'btn', 'btn-solid-short');
-    sourceButton.href = modalName.liveLink;
-
-    githubButton.classList.add('button', 'btn', 'btn-solid-short');
-    githubButton.href = modalName.linkSource;
-
-    sourceButton.innerHTML = 'See Live <i class="fas fa-external-link-alt"></i>';
-    githubButton.innerHTML = 'See Source <i class="fab fa-github"></i></a>';
-
-    buttonGroup.appendChild(sourceButton);
-    buttonGroup.appendChild(githubButton);
+    const htmlGroup = `    
+      <img class="modal-image" src=${modalName.imageUrl} alt="feature work">
+      <div class ="wrapper-para">
+        <p class="modal-desc">${modalName.description}</p>
+        <div class="modal-buttons-nav">
+          <a class="button btn btn-solid-short" href=${modalName.linkSource} target="_blank">See Live <i class="fas fa-external-link-alt"></i>
+          </a>
+          <a  class="button btn btn-solid-short" href=${modalName.linkSource} target="_blank"> See Source <i class="fab fa-github"></i></a></a>
+        </div>
+      </div>`;
+    const newContainer = document.createElement('div');
+    newContainer.classList.add('wrapper-group');
+    newContainer.innerHTML = htmlGroup;
 
     for (let i = 0; i < modalName.technolgies.length; i += 1) {
       const li = document.createElement('li');
@@ -130,35 +128,59 @@ const constructModal = (modalItem) => {
       techLists.appendChild(li);
     }
 
-    const popupModal = document.createElement('div');
-    popupModal.classList.add('modal-content');
     popupModal.appendChild(cancelButton);
     popupModal.appendChild(title);
     popupModal.appendChild(techLists);
-    popupModal.appendChild(image);
-    popupModal.appendChild(desc);
-    popupModal.appendChild(buttonGroup);
+    popupModal.appendChild(newContainer);
 
-    const modal = document.createElement('section');
-    modal.classList.add('modal');
     modal.appendChild(popupModal);
     bodyTag.appendChild(modal);
+
+    bodyTag.classList.toggle('blur');
     modal.style.display = 'flex';
 
     cancelButton.addEventListener('click', () => {
       modal.style.display = 'none';
+      bodyTag.classList.remove('blur');
+      newContainer.innerHTML = '';
+      techLists.innerHTML = '';
     });
 
     window.onclick = (e) => {
       if (e.target === modal) {
         modal.style.display = 'none';
+        bodyTag.classList.toggle('blur');
       }
     };
   }
 };
 
-const featuredWork = document.getElementById('recent-work-item');
+const featuredWork = document.getElementById('featured_work');
+const workOne = document.getElementById('work-1');
+const workTwo = document.getElementById('work-2');
+const workThree = document.getElementById('work-3');
+const workFour = document.getElementById('work-4');
+const workFive = document.getElementById('work-5');
+const workSix = document.getElementById('work-6');
 
 featuredWork.onclick = () => {
-  constructModal('recentWork', 'block');
+  constructModal('featured_work', 'block');
+};
+workOne.onclick = () => {
+  constructModal('work_1', 'block');
+};
+workTwo.onclick = () => {
+  constructModal('work_2', 'block');
+};
+workThree.onclick = () => {
+  constructModal('work_3', 'block');
+};
+workFour.onclick = () => {
+  constructModal('work_4, block');
+};
+workFive.onclick = () => {
+  constructModal('work_5', 'block');
+};
+workSix.onclick = () => {
+  constructModal('work_6', 'block');
 };
