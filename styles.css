@@ -1038,6 +1038,17 @@ body {
   background-color: #fbf8f7;
 }
 
+.error-message {
+  color: red;
+  font-family: Inter, sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  margin-bottom: 36px;
+  padding: 12px;
+  align-self: center;
+}
+
 @media screen and (min-width: 992px) {
   .wrapper-form {
     display: flex;
