@@ -429,6 +429,7 @@ body {
   text-decoration: none;
   border: 1px solid #8993a4;
   display: inline-block;
+  cursor: pointer;
 }
 
 .btn-transparent {
@@ -554,7 +555,12 @@ body {
 }
 
 .work-item-1 .work-list-description {
-  display: none;
+  display: block;
+  background: linear-gradient(-180deg, rgb(112, 115, 121, 0.6), rgba(112, 115, 121, 0.8));
+}
+
+.work-item-1:hover .work-list-description:hover {
+  display: block;
 }
 
 .work-item-2 {
@@ -659,7 +665,153 @@ body {
 .work-item-4 .btn-solid-long,
 .work-item-5 .btn-solid-long,
 .work-item-6 .btn-solid-long {
+  display: block;
+}
+
+/* Modal Styles */
+.blur > *:not(.modal) {
+  filter: blur(3px);
+}
+
+.modal {
   display: none;
+  flex-direction: column;
+  align-items: center;
+  width: 91.47%;
+  position: fixed;
+  top: 33px;
+  overflow-y: scroll;
+  margin: 0 16px;
+  height: calc(100vh - 72px);
+  background-color: #fff;
+  z-index: 9999;
+}
+
+.cancel-modal {
+  position: absolute;
+  top: 15px;
+  right: 24px;
+}
+
+.modal-content {
+  padding: 16px 20px;
+}
+
+.modal-title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+  font-family: Roboto, serif;
+  margin: 16px 0 16px 16px;
+  padding-bottom: 44px;
+}
+
+.modal-image {
+  margin: 24px auto;
+  width: 100%;
+}
+
+.modal-desc {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #344563;
+  padding-bottom: 16px;
+}
+
+.modal-buttons {
+  display: flex;
+  list-style: none;
+  margin-bottom: 12px;
+  padding-left: 0;
+}
+
+.btn-gray-modal {
+  border: 1px solid #8993a4;
+  display: inline-block;
+  background: rgb(255 255 255 / 24%);
+  color: #000;
+  padding: 12px 10px;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 500;
+  margin-right: 12px;
+}
+
+.modal-buttons-nav {
+  display: flex;
+  gap: 19px;
+}
+
+.button i {
+  padding-left: 16px;
+}
+
+@media screen and (min-width: 992px) {
+  .modal {
+    align-items: flex-start;
+    margin: 30px 142px auto 142px;
+    width: 82.7%;
+  }
+
+  .cancel-modal {
+    position: absolute;
+    top: 38px;
+    right: 38px;
+    width: 24px;
+  }
+
+  .modal-content {
+    padding: 24px;
+  }
+
+  .wrapper-group {
+    display: flex;
+  }
+
+  .modal-title {
+    font-weight: 400;
+    font-family: 'Crete Round', serif;
+    margin: 16px 0 16px 16px;
+    padding-bottom: 16px;
+  }
+
+  .modal-image {
+    margin: 0;
+    width: 47%;
+    margin-right: 25px;
+  }
+
+  .modal-desc {
+    line-height: 30px;
+    font-weight: 400;
+    padding-bottom: 80px;
+  }
+
+  .modal-buttons {
+    display: flex;
+    list-style: none;
+    margin-bottom: 12px;
+    padding-left: 0;
+  }
+
+  .btn-gray-modal {
+    margin-bottom: 40px;
+  }
+
+  .wrapper-para {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .modal-buttons-nav {
+    display: flex;
+    gap: 19px;
+  }
+
+  .button i {
+    padding-left: 16px;
+  }
 }
 
 /* About Section */
