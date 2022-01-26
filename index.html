@@ -46,13 +46,13 @@
       <div class="nav">
         <ul class="desktop-nav">
           <li>
-            <a href="#">Portfolio</a>
+            <a href="#work-section">Portfolio</a>
           </li>
           <li>
-            <a href="#">About</a>
+            <a href="#about-section">About</a>
           </li>
           <li>
-            <a href="#">Contact</a>
+            <a href="#form-section">Contact</a>
           </li>
           <li>
             <a href="#"><img src="assets/images/icon-mail-desktop.svg"
@@ -324,8 +324,8 @@
         I'm always interested in hearing about new projects, so if you'd like
         to chat please get in touch.
       </h3>
-      <form class="portfolio-form" id ="portfolio-form" action="https://formspree.io/f/mdobanyg"
-        method="post">
+      <form class="portfolio-form" id="portfolio-form"
+        action="https://formspree.io/f/mdobanyg" method="post" novalidate>
         <ul>
           <li>
             <input class="form-input" type="text" id="name" name="name"
@@ -333,8 +333,9 @@
           </li>
           <li>
             <input class="form-input" type="email" id="email" name="email"
-              placeholder="Email address" required />   
-              <!-- <span class="email-error-message" id="email-error" >sfdfdfdfdf</span>            -->
+              placeholder="Email address" required
+              pattern="/^([a-z0-9_\-\.]+)@([a-z0-9_\-\.]+)\.([a-z]{2,5})$/" />
+            <span id="email-error"></span>
           </li>
           <li>
             <textarea class="form-message" id="message" name="message"

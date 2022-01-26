@@ -112,7 +112,7 @@ const constructModal = (modalItem) => {
       <div class ="wrapper-para">
         <p class="modal-desc">${modalName.description}</p>
         <div class="modal-buttons-nav">
-          <a class="button btn btn-solid-short" href=${modalName.linkSource} target="_blank">See Live <i class="fas fa-external-link-alt"></i>
+          <a class="button btn btn-solid-short" href=${modalName.linkLink} target="_blank">See Live <i class="fas fa-external-link-alt"></i>
           </a>
           <a  class="button btn btn-solid-short" href=${modalName.linkSource} target="_blank"> See Source <i class="fab fa-github"></i></a></a>
         </div>
@@ -186,25 +186,25 @@ workSix.onclick = () => {
 };
 
 const form = document.getElementById('portfolio-form');
-const error = document.getElementById('submit-error');
+const submitError = document.getElementById('submit-error');
 const email = document.getElementById('email');
 
-const regRex = /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+(?:\.[a-z0-9-]+)*$/;
+const regRex = /^([a-z0-9_\-.]+)@([a-z0-9_\-.]+)\.([a-z]{2,5})$/;
 
-function showError() {
-  error.textContent = 'The email field is not in valid form';
-  error.classList.toggle('submit-error-message');
+function showSubmitError() {
+  submitError.textContent = 'The email field is not in valid form';
+  submitError.classList.toggle('submit-error-message');
 }
 
 function submitForm() {
   form.submit();
+  form.reset();
 }
 
 form.addEventListener('submit', (event) => {
   event.preventDefault();
-  console.log(regRex.test(email.value.trim()));
   if (!regRex.test(email.value.trim())) {
-    showError();
+    showSubmitError();
   } else {
     submitForm();
   }

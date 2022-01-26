@@ -1008,10 +1008,6 @@ body {
   background-color: #e5e5e5;
 }
 
-#email {
-  margin-bottom: 10px;
-}
-
 .form-input::placeholder {
   font-family: Inter, sans-serif;
   font-style: normal;
@@ -1044,28 +1040,14 @@ body {
 }
 
 /* Form Validation */
-
 .submit-error-message {
-  color: red;
+  color: #641c03;
   font-family: Inter, sans-serif;
   font-weight: 700;
   font-size: 15px;
   line-height: 24px;
   margin-bottom: 36px;
   padding: 12px 0;
-}
-
-.email-error-message {
-  display: none;
-}
-
-.email-error-message:invalid {
-  margin-bottom: 24px;
-  font-weight: 700;
-  font-size: 15px;
-  line-height: 24px;
-  padding: 12px 0;
-  color: red;
 }
 
 @media screen and (min-width: 992px) {
