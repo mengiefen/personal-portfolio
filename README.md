@@ -42,6 +42,10 @@
 
 **The css media querries used to include responsive web design features fro various screen sizes**
 
+**The form validation feature has been added using JavaScript**
+
+**The websited enables to store the form submission data to local storages**
+
 ## Authors
 
 👤 **Author1**

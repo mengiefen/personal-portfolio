@@ -168,6 +168,10 @@ body {
   .desktop-nav li a:hover {
     color: #e05304;
   }
+
+  .desktop-nav li a:last-child:hover {
+    stroke: #f55800;
+  }
 }
 
 /* Front page styles */
@@ -672,6 +676,7 @@ body {
 /* Modal Styles */
 .blur > *:not(.modal) {
   filter: blur(3px);
+  overflow: hidden;
 }
 
 .modal {
@@ -974,7 +979,7 @@ body {
   background-color: #e5e5e5;
   display: flex;
   flex-direction: column;
-  margin: 0 24px 160px 24px;
+  padding: 0 24px;
 }
 
 .form-description {
@@ -1001,12 +1006,35 @@ body {
 
 .form-input {
   padding: 12px 16px 12px 0;
-  outline: none;
   border-style: none;
-  border-bottom: 1px solid #dbd8d7;
+  outline: #979493 solid 1px;
+  border-radius: 5px;
   margin-bottom: 39px;
   width: 100%;
   background-color: #e5e5e5;
+}
+
+.form-input:focus {
+  outline: none;
+  border-bottom: 3px solid #ee8549;
+}
+
+.form-input#email:valid {
+  outline: none;
+  border: none;
+  box-shadow: -2px 5px 10px 2px #488357;
+}
+
+.border-red {
+  outline: none;
+  border: none;
+  box-shadow: -2px 5px 10px 2px #db3737;
+}
+
+.border-normal {
+  outline: none;
+  box-shadow: none;
+  border-bottom: 3px solid #ee8549;
 }
 
 .form-input::placeholder {
@@ -1016,6 +1044,7 @@ body {
   font-size: 15px;
   line-height: 24px;
   color: #979493;
+  padding-left: 5px;
 }
 
 .form-message {
@@ -1023,6 +1052,8 @@ body {
   background-color: transparent;
   height: 114px;
   margin-bottom: 24px;
+  outline: 1px solid #979493;
+  border-radius: 5px;
 }
 
 .form-message::placeholder {
@@ -1041,8 +1072,13 @@ body {
 }
 
 /* Form Validation */
+.error {
+  display: none;
+}
+
 .submit-error-message {
-  color: #641c03;
+  display: block;
+  color: #d81616;
   font-family: Inter, sans-serif;
   font-weight: normal;
   font-size: 15px;
