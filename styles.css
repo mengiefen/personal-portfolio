@@ -168,6 +168,10 @@ body {
   .desktop-nav li a:hover {
     color: #e05304;
   }
+
+  .desktop-nav li a:last-child:hover {
+    stroke: #f55800;
+  }
 }
 
 /* Front page styles */
@@ -1032,12 +1036,6 @@ body {
   box-shadow: none;
   border-bottom: 3px solid #ee8549;
 }
-
-/* .border-green {
-  outline: none;
-  border: none;
-  box-shadow: -2px 5px 10px 2px #488357;
-}  */
 
 .form-input::placeholder {
   font-family: Inter, sans-serif;
