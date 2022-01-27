@@ -197,6 +197,7 @@ const regRex = /^([a-z0-9_\-.]+)@([a-z0-9_\-.]+)\.([a-z]{2,5})$/;
 
 function showSubmitError() {
   submitError.classList.toggle('submit-error-message');
+  email.classList.toggle('border-red');
 }
 
 const emptyForm = () => {
@@ -208,16 +209,8 @@ const emptyForm = () => {
 function submitForm() {
   form.submit();
   emptyForm();
+  localStorage.removeItem('formData');
 }
-
-form.addEventListener('submit', (event) => {
-  event.preventDefault();
-  if (!regRex.test(email.value.trim())) {
-    showSubmitError();
-  } else {
-    submitForm();
-  }
-});
 
 const fillLocalStorage = () => {
   let formData = {};
@@ -245,6 +238,15 @@ const fillForm = () => {
 
 fillForm();
 
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  if (!regRex.test(email.value.trim())) {
+    showSubmitError();
+  } else {
+    email.classList.add('border-normal');
+    submitForm();
+  }
+});
 userName.addEventListener('change', fillLocalStorage);
 email.addEventListener('change', fillLocalStorage);
 message.addEventListener('change', fillLocalStorage);

@@ -1002,13 +1002,42 @@ body {
 
 .form-input {
   padding: 12px 16px 12px 0;
-  outline: none;
   border-style: none;
-  border-bottom: 1px solid #dbd8d7;
+  outline: #979493 solid 1px;
+  border-radius: 5px;
   margin-bottom: 39px;
   width: 100%;
   background-color: #e5e5e5;
 }
+
+.form-input:focus {
+  outline: none;
+  border-bottom: 3px solid #ee8549;
+}
+
+.form-input#email:valid {
+  outline: none;
+  border: none;
+  box-shadow: -2px 5px 10px 2px #488357;
+}
+
+.border-red {
+  outline: none;
+  border: none;
+  box-shadow: -2px 5px 10px 2px #db3737;
+}
+
+.border-normal {
+  outline: none;
+  box-shadow: none;
+  border-bottom: 3px solid #ee8549;
+}
+
+/* .border-green {
+  outline: none;
+  border: none;
+  box-shadow: -2px 5px 10px 2px #488357;
+}  */
 
 .form-input::placeholder {
   font-family: Inter, sans-serif;
@@ -1024,6 +1053,8 @@ body {
   background-color: transparent;
   height: 114px;
   margin-bottom: 24px;
+  outline: 1px solid #979493;
+  border-radius: 5px;
 }
 
 .form-message::placeholder {
@@ -1048,7 +1079,7 @@ body {
 
 .submit-error-message {
   display: block;
-  color: #641c03;
+  color: #d81616;
   font-family: Inter, sans-serif;
   font-weight: normal;
   font-size: 15px;

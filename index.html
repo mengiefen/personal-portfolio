@@ -333,15 +333,15 @@
           <li>
             <input class="form-input" type="email" id="email" name="email"
               placeholder="Email address" required
-              pattern="/^([a-z0-9_\-\.]+)@([a-z0-9_\-\.]+)\.([a-z]{2,5})$/" />
+              pattern="^([a-z0-9_\-\.]+)@([a-z0-9_\-\.]+)\.([a-z]{2,5})$" />
             <span id="email-error"></span>
           </li>
           <li>
-            <textarea class="form-message" id="message" name="message"
+            <textarea class="form-message form-input" id="message" name="message"
               placeholder="Enter text here" maxlength="500" required></textarea>
           </li>
         </ul>
-        <span class="error" id="submit-error">The email field is not in valid form</span>
+        <span class="error" id="submit-error">Please enter a correct email address format</span>
         <input class="btn btn-solid-short form-btn" type="submit"
           value="Get in touch" name="submitmessage" />
       </form>
