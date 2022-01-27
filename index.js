@@ -72,14 +72,14 @@ function toggleMenuOpen() {
   mobileNav.style.display = 'block';
   menuIcon.style.display = 'none';
   logo.style.display = 'none';
-  bodyTag.classList.toggle('scroll-disable');
+  bodyTag.classList.add('scroll-disable');
 }
 
 function toggleMenuClose() {
   mobileNav.style.display = 'none';
   menuIcon.style.display = 'block';
   logo.style.display = 'block';
-  bodyTag[0].classList.toggle('scroll-disable');
+  bodyTag.classList.remove('scroll-disable');
 }
 
 options.forEach((listItem) => {

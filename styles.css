@@ -26,32 +26,33 @@ body {
 
 /* Navigation and Logo */
 .header-section {
-  background-color: #3c3a39;
-  width: 100vw;
-  position: fixed;
-  z-index: 999;
+  position: sticky;
+  z-index: 9999;
   top: 0;
   left: 0;
+  background-color: #3c3a39;
+  width: 100%;
 }
 
 .mobile-menu {
-  height: 100vh;
+  width: 87.2%;
+  min-height: 100vh;
+  overflow-y: scroll;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   position: relative;
   list-style: none;
-  padding: 0 24px;
+  padding-right: 24px;
 }
 
 .mobile-nav .cancel-btn {
-  /* display:none; */
   width: 24px;
   height: auto;
   position: absolute;
-  top: 24px;
-  right: 10%;
+  top: 16px;
+  right: 20%;
 }
 
 .mobile-nav {
@@ -1043,7 +1044,7 @@ body {
 .submit-error-message {
   color: #641c03;
   font-family: Inter, sans-serif;
-  font-weight: 700;
+  font-weight: normal;
   font-size: 15px;
   line-height: 24px;
   margin-bottom: 36px;
