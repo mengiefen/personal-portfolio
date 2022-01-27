@@ -72,14 +72,14 @@ function toggleMenuOpen() {
   mobileNav.style.display = 'block';
   menuIcon.style.display = 'none';
   logo.style.display = 'none';
-  bodyTag.classList.toggle('scroll-disable');
+  bodyTag.classList.add('scroll-disable');
 }
 
 function toggleMenuClose() {
   mobileNav.style.display = 'none';
   menuIcon.style.display = 'block';
   logo.style.display = 'block';
-  bodyTag[0].classList.toggle('scroll-disable');
+  bodyTag.classList.remove('scroll-disable');
 }
 
 options.forEach((listItem) => {
@@ -112,7 +112,7 @@ const constructModal = (modalItem) => {
       <div class ="wrapper-para">
         <p class="modal-desc">${modalName.description}</p>
         <div class="modal-buttons-nav">
-          <a class="button btn btn-solid-short" href=${modalName.linkSource} target="_blank">See Live <i class="fas fa-external-link-alt"></i>
+          <a class="button btn btn-solid-short" href=${modalName.linkLink} target="_blank">See Live <i class="fas fa-external-link-alt"></i>
           </a>
           <a  class="button btn btn-solid-short" href=${modalName.linkSource} target="_blank"> See Source <i class="fab fa-github"></i></a></a>
         </div>
@@ -184,3 +184,28 @@ workFive.onclick = () => {
 workSix.onclick = () => {
   constructModal('work_6', 'block');
 };
+
+const form = document.getElementById('portfolio-form');
+const submitError = document.getElementById('submit-error');
+const email = document.getElementById('email');
+
+const regRex = /^([a-z0-9_\-.]+)@([a-z0-9_\-.]+)\.([a-z]{2,5})$/;
+
+function showSubmitError() {
+  submitError.textContent = 'The email field is not in valid form';
+  submitError.classList.toggle('submit-error-message');
+}
+
+function submitForm() {
+  form.submit();
+  form.reset();
+}
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  if (!regRex.test(email.value.trim())) {
+    showSubmitError();
+  } else {
+    submitForm();
+  }
+});

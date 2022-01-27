@@ -26,32 +26,33 @@ body {
 
 /* Navigation and Logo */
 .header-section {
-  background-color: #3c3a39;
-  width: 100vw;
-  position: fixed;
-  z-index: 999;
+  position: sticky;
+  z-index: 9999;
   top: 0;
   left: 0;
+  background-color: #3c3a39;
+  width: 100%;
 }
 
 .mobile-menu {
-  height: 100vh;
+  width: 87.2%;
+  min-height: 100vh;
+  overflow-y: scroll;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   position: relative;
   list-style: none;
-  padding: 0 24px;
+  padding-right: 24px;
 }
 
 .mobile-nav .cancel-btn {
-  /* display:none; */
   width: 24px;
   height: auto;
   position: absolute;
-  top: 24px;
-  right: 10%;
+  top: 16px;
+  right: 20%;
 }
 
 .mobile-nav {
@@ -973,6 +974,7 @@ body {
   background-color: #e5e5e5;
   display: flex;
   flex-direction: column;
+  margin: 0 24px 160px 24px;
 }
 
 .form-description {
@@ -1036,6 +1038,17 @@ body {
 .form-btn {
   align-self: center;
   background-color: #fbf8f7;
+}
+
+/* Form Validation */
+.submit-error-message {
+  color: #641c03;
+  font-family: Inter, sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  margin-bottom: 36px;
+  padding: 12px 0;
 }
 
 @media screen and (min-width: 992px) {
