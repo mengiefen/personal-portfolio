@@ -199,6 +199,12 @@ function showSubmitError() {
   submitError.classList.toggle('submit-error-message');
 }
 
+const emptyForm = () => {
+  userName.value = '';
+  email.value = '';
+  message.value = '';
+};
+
 function submitForm() {
   form.submit();
   emptyForm();
@@ -216,7 +222,7 @@ form.addEventListener('submit', (event) => {
 const fillLocalStorage = () => {
   let formData = {};
   formData = {
-    userNa: userName.value,
+    userName: userName.value,
     email: email.value,
     message: message.value,
   };
@@ -227,7 +233,7 @@ const fillForm = () => {
   let storedData = {};
   try {
     storedData = JSON.parse(localStorage.getItem('formData'));
-    userName.value = storedData.user_name;
+    userName.value = storedData.userName;
     email.value = storedData.email;
     message.value = storedData.message;
   } catch {
@@ -237,10 +243,8 @@ const fillForm = () => {
   }
 };
 
-const emptyForm = () => {
-  userName.value = '';
-  email.value = '';
-  message.value = '';
-};
-
 fillForm();
+
+userName.addEventListener('change', fillLocalStorage);
+email.addEventListener('change', fillLocalStorage);
+message.addEventListener('change', fillLocalStorage);
