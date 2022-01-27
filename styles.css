@@ -670,7 +670,7 @@ body {
 }
 
 /* Modal Styles */
-.blur>*:not(.modal) {
+.blur > *:not(.modal) {
   filter: blur(3px);
   overflow: hidden;
 }
