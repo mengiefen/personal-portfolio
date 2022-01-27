@@ -672,6 +672,7 @@ body {
 /* Modal Styles */
 .blur > *:not(.modal) {
   filter: blur(3px);
+  overflow: hidden;
 }
 
 .modal {
@@ -974,7 +975,7 @@ body {
   background-color: #e5e5e5;
   display: flex;
   flex-direction: column;
-  margin: 0 24px 160px 24px;
+  padding: 0 24px;
 }
 
 .form-description {
@@ -1041,7 +1042,12 @@ body {
 }
 
 /* Form Validation */
+.error {
+  display: none;
+}
+
 .submit-error-message {
+  display: block;
   color: #641c03;
   font-family: Inter, sans-serif;
   font-weight: normal;

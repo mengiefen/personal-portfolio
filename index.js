@@ -112,7 +112,7 @@ const constructModal = (modalItem) => {
       <div class ="wrapper-para">
         <p class="modal-desc">${modalName.description}</p>
         <div class="modal-buttons-nav">
-          <a class="button btn btn-solid-short" href=${modalName.linkLink} target="_blank">See Live <i class="fas fa-external-link-alt"></i>
+          <a class="button btn btn-solid-short" href=${modalName.liveLink} target="_blank">See Live <i class="fas fa-external-link-alt"></i>
           </a>
           <a  class="button btn btn-solid-short" href=${modalName.linkSource} target="_blank"> See Source <i class="fab fa-github"></i></a></a>
         </div>
@@ -187,18 +187,21 @@ workSix.onclick = () => {
 
 const form = document.getElementById('portfolio-form');
 const submitError = document.getElementById('submit-error');
-const email = document.getElementById('email');
+const {
+  email,
+  userName,
+  message,
+} = form.elements;
 
 const regRex = /^([a-z0-9_\-.]+)@([a-z0-9_\-.]+)\.([a-z]{2,5})$/;
 
 function showSubmitError() {
-  submitError.textContent = 'The email field is not in valid form';
   submitError.classList.toggle('submit-error-message');
 }
 
 function submitForm() {
   form.submit();
-  form.reset();
+  emptyForm();
 }
 
 form.addEventListener('submit', (event) => {
@@ -209,3 +212,35 @@ form.addEventListener('submit', (event) => {
     submitForm();
   }
 });
+
+const fillLocalStorage = () => {
+  let formData = {};
+  formData = {
+    userNa: userName.value,
+    email: email.value,
+    message: message.value,
+  };
+  localStorage.setItem('formData', JSON.stringify(formData));
+};
+
+const fillForm = () => {
+  let storedData = {};
+  try {
+    storedData = JSON.parse(localStorage.getItem('formData'));
+    userName.value = storedData.user_name;
+    email.value = storedData.email;
+    message.value = storedData.message;
+  } catch {
+    userName.value = '';
+    email.value = '';
+    message.value = '';
+  }
+};
+
+const emptyForm = () => {
+  userName.value = '';
+  email.value = '';
+  message.value = '';
+};
+
+fillForm();

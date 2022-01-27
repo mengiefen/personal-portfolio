@@ -327,7 +327,7 @@
         action="https://formspree.io/f/mdobanyg" method="post" novalidate>
         <ul>
           <li>
-            <input class="form-input" type="text" id="name" name="name"
+            <input class="form-input" type="text" id="user_name" name="name"
               placeholder="Full name" maxlength="30" required />
           </li>
           <li>
@@ -341,7 +341,7 @@
               placeholder="Enter text here" maxlength="500" required></textarea>
           </li>
         </ul>
-        <span id="submit-error"></span>
+        <span class="error" id="submit-error">The email field is not in valid form</span>
         <input class="btn btn-solid-short form-btn" type="submit"
           value="Get in touch" name="submitmessage" />
       </form>
