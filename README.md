@@ -1,74 +1,81 @@
-# personal-portfolio
 
-![](https://img.shields.io/badge/Microverse-blueviolet)
+![](https://img.shields.io/badge/Microverse-blueviolet)   ![](https://img.shields.io/badge/MENGSTU-FENTAW-success)
 
-# "Microverse Portfolio" Project
+# Personal Portfolio
 
-> In this project, the portfolio responsive website has been done using purely HTML and CSS technologies as part of the requirement of Microverse learning. The work is done based on the available reference Figma design file.
+> In this project, the portfolio responsive website has been done using HTML and CSS and Vanilla JavaScript.
 
-## Mobile Version
+## Screenshot
 
 ![screenshot](./assets/images/mobile-front-page.png)
 
-> All units are from Figma design file: Template-2
-> In order to layout components flexbox and CSS Grid are used.
 
-## Desktop Version
-
-![screenshot](./assets/images/desktop-front-page.png)
-
-> All units and styles are from Figma design file: Template-2
-> To layout components flexbox and CSS Grid are used.
-
-## Built With
-
-- HTML
-- CSS
+## Built with
+- Major languages: HTML, CSS, JavaScript
+- Technologies used: Github, Linters
 
 ## Getting Started
+Clone the repository and setup the linters
 
-**This is an example of how you may setup linters for htm-css projects.**
-**Demonstrate the concept of github flows**
+### Prerequisites
+- npm ( Node Package Manager )
+- git and Github Account
 
-**The the front page has two sections: the header-section and the heading section**
+### Setup
+To get a local copy up and running follow these simple example steps.
+  - Open terminal  
+  - Change the directory you want put the repo
+  - Then run
+      i. Run git clone <git@github.com:<accountid>/<repo-name>.git>
+      ii. cd repo-name/
+  
+### Install
+  - **Webhint** linter
 
-**Flexbox is used to arrange elements in both section**
+      `npm install --save-dev hint@6.x`
 
-**The work section part of the projects completed. This has been done for mobile website using Flexbox and CSS Grid.**
+  - **Stylelint** linter
 
-**The about-section is done using unorder list elements to showcase the major skills for the personal portfolio website.**
+     `npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x`
 
-**The form-section consists of the form submission elements with form validation. In addition, the footer social-media navigation implemented.**
+  - **ESLint** linter
 
-**The css media querries used to include responsive web design features fro various screen sizes**
+      `npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-import@2.x babel-eslint@10.x`  
 
-**The form validation feature has been added using JavaScript**
+### Run tests
 
-**The websited enables to store the form submission data to local storages**
+- **Webhint** linter
+    -`npx hint .` on the root of your directory of your project.
+- **Stylelint** linter
+    - `npx stylelint "**/*.{css,scss}"` on the root of your directory of your project.
+- **ESLint** linter
+    - `npx eslint .` on the root of your directory of your project.
 
 ## Authors
 
-👤 **Author1**
+👤 **Mengstu Fentaw**
 
 - GitHub: [@mengiefen](https://github.com/githubhandle)
 - Twitter: [@MengistuFentaw](https://twitter.com/twitterhandle)
 - Linkedin: [LinkedIn](https://www.linkedin.com/in/mengefen/)
 
-## 🤝 Contributing
+## Contributers
 
--Github: [@Estebanmual](https://github.com/Estebanmual)
+👤 **Edgar Esteban Muñoz Alba**
 
--Github: Kenny Salazar[@helio3197](https://github.com/helio3197)
+-Github:[@Estebanmual](https://github.com/Estebanmual)
 
-## Show your support
+👤 **Kenny Salazar**
+-Github:[@helio3197](https://github.com/helio3197)
+
 
 ## Acknowledgments
 
-- To my coding partners: Nytare Guy, Ivan Barbosa da Silva,Esyeban Mual.
+- To my coding partners, morning session team,reviewers and standup team memebers.
 
 ## Live Demo
 
-- https://mengiefen.github.io/personal-portfolio/
+ - [Live Demo Link](https://mengiefen.github.io/personal-portfolio/)
 
 ## 📝 License
 
