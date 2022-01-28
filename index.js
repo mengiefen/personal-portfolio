@@ -17,7 +17,7 @@ const data = {
   work_1: {
     title: 'Multi Post Stories',
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    imageUrl: 'assets/images/modal-image-1.svg',
+    imageUrl: 'assets/images/modal-image-1-desktop.svg',
     technolgies: ['CSS', 'Bootstrap', 'Ruby on Rails'],
     liveLink: 'https://mengiefen.github.io/personal-portfolio/#',
     linkSource: 'https://github.com/mengiefen/personal-portfolio',
@@ -26,7 +26,7 @@ const data = {
   work_2: {
     title: 'Multi Post Stories',
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    imageUrl: 'assets/images/modal-image-1.svg',
+    imageUrl: 'assets/images/modal-image-1-desktop.svg',
     technolgies: ['CSS', 'Bootstrap', 'Ruby on Rails'],
     liveLink: 'https://mengiefen.github.io/personal-portfolio/#',
     linkSource: 'https://github.com/mengiefen/personal-portfolio',
@@ -35,7 +35,7 @@ const data = {
   work_3: {
     title: 'Multi Post Stories',
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    imageUrl: 'assets/images/modal-image-1.svg',
+    imageUrl: 'assets/images/modal-image-1-desktop.svg',
     technolgies: ['CSS', 'Bootstrap', 'Ruby on Rails'],
     liveLink: 'https://mengiefen.github.io/personal-portfolio/#',
     linkSource: 'https://github.com/mengiefen/personal-portfolio',
@@ -43,7 +43,7 @@ const data = {
   work_4: {
     title: 'Multi Post Stories',
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    imageUrl: 'assets/images/modal-image-1.svg',
+    imageUrl: 'assets/images/modal-image-1-desktop.svg',
     technolgies: ['CSS', 'Bootstrap', 'Ruby on Rails'],
     liveLink: 'https://mengiefen.github.io/personal-portfolio/#',
     linkSource: 'https://github.com/mengiefen/personal-portfolio',
@@ -52,7 +52,7 @@ const data = {
   work_5: {
     title: 'Multi Post Stories',
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    imageUrl: 'assets/images/modal-image-1.svg',
+    imageUrl: 'assets/images/modal-image-1-desktop.svg',
     technolgies: ['CSS', 'Bootstrap', 'Ruby on Rails'],
     liveLink: 'https://mengiefen.github.io/personal-portfolio/#',
     linkSource: 'https://github.com/mengiefen/personal-portfolio',
@@ -61,7 +61,7 @@ const data = {
   work_6: {
     title: 'Multi Post Stories',
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    imageUrl: 'assets/images/modal-image-1.svg',
+    imageUrl: 'assets/images/modal-image-1-desktop.svg',
     technolgies: ['CSS', 'Bootstrap', 'Ruby on Rails'],
     liveLink: 'https://mengiefen.github.io/personal-portfolio/#',
     linkSource: 'https://github.com/mengiefen/personal-portfolio',
@@ -101,7 +101,7 @@ cancelButton.classList.add('cancel-modal');
 popupModal.classList.add('modal-content');
 modal.classList.add('modal');
 
-cancelButton.innerHTML = '<img class="cancel-icon" src="assets/images/icon-cancel.svg" alt="Menu cancel"/></a>';
+cancelButton.innerHTML = '<img class="cancel-icon" src="assets/images/icon-cancel.svg" alt="Menu cancel"/>';
 
 const constructModal = (modalItem) => {
   if (modalItem in data) {
@@ -123,7 +123,7 @@ const constructModal = (modalItem) => {
 
     for (let i = 0; i < modalName.technolgies.length; i += 1) {
       const li = document.createElement('li');
-      li.classList.add('btn-gray-modal');
+      li.classList.add('btn-gray-modal', 'btn-gray');
       li.appendChild(document.createTextNode(modalName.technolgies[i]));
       techLists.appendChild(li);
     }

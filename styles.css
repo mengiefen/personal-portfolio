@@ -469,7 +469,7 @@ body {
 
   .image-placeholder {
     margin-right: 16px;
-    width: 480px;
+    width: 55%;
     height: auto;
   }
 
@@ -505,7 +505,7 @@ body {
 
 @media screen and (min-width: 1201px) {
   .image-placeholder {
-    width: 684px;
+    width: 60%;
   }
 
   .sub-heading {
@@ -767,6 +767,10 @@ body {
     width: 24px;
   }
 
+  .cancel-modal:hover {
+    background-color: #ebedf0;
+  }
+
   .modal-content {
     padding: 24px;
   }
@@ -987,8 +991,8 @@ body {
   font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 32px;
-  line-height: 44px;
+  font-size: 28px;
+  line-height: 36px;
   text-align: center;
   color: #172b4d;
 }
@@ -1005,9 +1009,11 @@ body {
 }
 
 .form-input {
-  padding: 12px 16px 12px 0;
+  padding: 12px 12px;
   border-style: none;
   outline: #979493 solid 1px;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
   border-radius: 5px;
   margin-bottom: 39px;
   width: 100%;
@@ -1023,6 +1029,10 @@ body {
   outline: none;
   border: none;
   box-shadow: -2px 5px 10px 2px #488357;
+}
+
+.error {
+  display: none;
 }
 
 .border-red {
@@ -1044,7 +1054,6 @@ body {
   font-size: 15px;
   line-height: 24px;
   color: #979493;
-  padding-left: 5px;
 }
 
 .form-message {
@@ -1072,10 +1081,6 @@ body {
 }
 
 /* Form Validation */
-.error {
-  display: none;
-}
-
 .submit-error-message {
   display: block;
   color: #d81616;
@@ -1142,8 +1147,8 @@ body {
   .form-description {
     margin: 0 24px auto 135px;
     width: 455px;
-    font-size: 40px;
-    line-height: 52px;
+    font-size: 32px;
+    line-height: 44px;
   }
 }
 
