@@ -3,7 +3,7 @@
 
 # Personal Portfolio
 
-> In this project, the portfolio responsive website has been done using HTML and CSS and Vanilla JavaScript.
+> This project is the responsive portfolio website built with HTML, CSS, and Vanilla JavaScript. The project came to life following the the given Figma UI template, and completed matching the same given design as much as possible. The website is fully responsive across various devices. Therefore, it is  suitable for mobile and desktop users.
 
 ## Screenshot
 
@@ -12,10 +12,10 @@
 
 ## Built with
 - Major languages: HTML, CSS, JavaScript
-- Technologies used: Github, Linters
+- Technologies used: Github, Linters, Visual Studio Code
 
 ## Getting Started
-Clone the repository and setup the linters
+  - Clone the repository and setup the linters
 
 ### Prerequisites
 - npm ( Node Package Manager )
@@ -24,31 +24,31 @@ Clone the repository and setup the linters
 ### Setup
 To get a local copy up and running follow these simple example steps.
   - Open terminal  
-  - Change the directory you want put the repo
+  - Change the directory
   - Then run
-      i. Run git clone <git@github.com:<accountid>/<repo-name>.git>
-      ii. cd repo-name/
+     > `Run git clone <git@github.com:mengiefen/personal-portfolio.git>`     
+     > `cd personal-portfolio/`
+     > `npm install`
   
-### Install
-  - **Webhint** linter
+### Install Linters
+  - **Webhint**
 
       `npm install --save-dev hint@6.x`
 
-  - **Stylelint** linter
+  - **Stylelint**
 
      `npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x`
 
-  - **ESLint** linter
+  - **ESLint**
 
       `npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-import@2.x babel-eslint@10.x`  
 
-### Run tests
-
-- **Webhint** linter
+### Run Linter Check
+- **Webhint** 
     -`npx hint .` on the root of your directory of your project.
-- **Stylelint** linter
+- **Stylelint**
     - `npx stylelint "**/*.{css,scss}"` on the root of your directory of your project.
-- **ESLint** linter
+- **ESLint**
     - `npx eslint .` on the root of your directory of your project.
 
 ## Authors
@@ -66,6 +66,7 @@ To get a local copy up and running follow these simple example steps.
 -Github:[@Estebanmual](https://github.com/Estebanmual)
 
 👤 **Kenny Salazar**
+
 -Github:[@helio3197](https://github.com/helio3197)
 
 
@@ -75,7 +76,7 @@ To get a local copy up and running follow these simple example steps.
 
 ## Live Demo
 
- - [Live Demo Link](https://mengiefen.github.io/personal-portfolio/)
+ - [Live Demo](https://mengiefen.github.io/personal-portfolio/)
 
 ## 📝 License
 
